@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">clcik</button>
+    <button id="btn2">click</button>
+    <button id="newItem">new item</button>
+
+    <!-- delete purpose -->
+    <ul id="pList">
+        <li class="item">Joydip</li>
+        <li class="item">Jishu</li>
+        <li class="item">Nipa</li>
+    </ul>
+
+
+
+
+
+
+    <h3>Hello World</h3>
+    <article id="joydip">
+        <h1>Joydip Paul</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempore sapiente natus consequatur illum reprehenderit est quae cupiditate, corporis quos?</p>
+
+        <ul id="list">
+            <li>List1</li>
+            <li>List2</li>
+        </ul>
+    </article>
+
+
+    <script>
+        document.body.style.backgroundColor='green';
+        document.body.style.color='white';
+
+        const ar = document.getElementById('joydip');
+        const newElement = document.createElement('p');
+        newElement.innerHTML='This is a new Paragraph created by javascript';
+        ar.appendChild(newElement);
+
+        const ul = document.getElementById("list");
+        const li = document.createElement("li");
+        li.innerHTML = "List3";
+        ul.appendChild(li);
+    </script>
+    <script>
+        
+    </script>
+    <script src="js.js"></script>
+</body>
+</html>
